@@ -1,0 +1,38 @@
+.article {
+    border: 1px solid #ccc;
+    padding: 16px;
+    margin: 16px 0;
+    border-radius: 8px;
+    display: flex;
+    /* Utilisation de flexbox pour aligner les éléments */
+    align-items: center;
+    /* Centrer verticalement les éléments */
+}
+
+.article img {
+    width: 200px;
+    /* Largeur fixe pour l'image en paysage */
+    height: auto;
+    /* Hauteur automatique pour conserver le ratio */
+    object-fit: cover;
+    /* Assurer que l'image couvre bien l'espace */
+    margin-left: 16px;
+    /* Marge à gauche de l'image */
+}
+
+.article-content {
+    flex: 1;
+    /* Permet au contenu de prendre l'espace restant */
+}
+
+.article h2 {
+    margin: 0;
+    /* Supprimer la marge par défaut */
+}
+
+.article .date {
+    color: #777;
+    font-size: 0.9em;
+    margin-bottom: 8px;
+    /* Espacement en bas de la date */
+}
