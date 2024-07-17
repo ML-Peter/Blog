@@ -18,7 +18,7 @@ if (isset($_SESSION['message']['true'])) : ?>
 
 isAuthenticated('admin');
 
-views('admin', ['titre' => 'Page Administrateur']);
+views('admin', ['titre' => 'Page Administrateur', 'pag' => 'admin']);
 
 unset($_SESSION['message']);
 unset($_SESSION['Errors']);
