@@ -12,7 +12,8 @@ function views($vue, $data=[])
 function isAuthenticated($vue)
 {
     if (isset($_SESSION['isAuthenticated']) && $_SESSION['isAuthenticated'] === true) {
-        views($vue);
+        //views($vue);
+        views($vue, ['titre' => 'Page Administrateur']);
     } else {
         views('login', ['titre'=> 'Login']);
     }

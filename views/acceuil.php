@@ -1,14 +1,9 @@
+<!-- Inclusion du de l'en-tete -->
 <?php include 'include/header.php';  ?>
 
 <body>
-    <h2>Bienvenue <?php if (isset($_SESSION['fullname'])) : ?>
-            <?php echo htmlspecialchars($_SESSION['fullname']); ?>
-        <?php endif; ?> sur SafiriContent
-    </h2>
-    <a href="index.php?search=login">Se connecter</a> |
-    <a href="index.php?search=signup">Créer un compte</a> |
-    <a href="index.php?search=admin">Postez un Article</a> |<br><br>
-    <!-- <a href="index.php?search=logout">Se deconnectez</a> -->
+    <!-- Inclusion du menu -->
+    <?php include 'include/menu.php'; ?>
     <!-- Formulaire de recherche -->
     <form method="POST" action="search.php">
         <input type="text" name="query" placeholder="Rechercher..." required>

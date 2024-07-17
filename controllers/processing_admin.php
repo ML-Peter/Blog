@@ -1,5 +1,5 @@
 <?php
-session_start();
+//session_start();
 
 // Vérifier si la méthode de requête est POST
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
